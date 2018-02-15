@@ -1,0 +1,73 @@
+﻿@model LifeSkillsProject.Models.BudgetC
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css' />
+
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/agency.min.css" rel="stylesheet" />
+
+    <!-- My personal CSS-->
+    <link href="~/MyCss/myCss.css" rel="stylesheet" />
+</head>
+<body id="budget">
+    <h1 class="text-center">Budgeting</h1>
+    <div>
+        <h5 class="text-center">Complete the below boxes (in £s) to see how much <strong id="budpopOut1">disposable income<span id="budhover1">Disposable income is just how much money you have to spend or save after paying your tax and monthly outgoings!</span></strong> you have!</h5>
+    </div>
+    <hr /><br />
+    @using (Html.BeginForm("Budget", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="container budgetC">
+            <div class="row">
+                <div class="offset-sm-1 col-sm-4">
+                    <p>Enter your yearly salary:<br />
+                    <input type="text" name="salary" maxlength="8" /></p>
+                    @Html.ValidationMessageFor(model => model.Salary, null, new { @class = "text-danger" })
+                    <p>How much is your rent/mortgage a month?:<br />
+                    <input type="text" name="rent" maxlength="8" /></p>
+                    @Html.ValidationMessageFor(model => model.Rent, null, new { @class = "text-danger" })
+                    <p>How much do you pay for bills a month?:<br />
+                    <input type="text" name="bills" maxlength="8" /></p>
+                    @Html.ValidationMessageFor(model => model.Bills, null, new { @class = "text-danger" })
+                    <p>Any monthly subscriptions? (Like a mobile phone contract, or an Amazon Prime account):<br />
+                    <input type="text" name="subscriptions" maxlength="8" /></p>
+                    @Html.ValidationMessageFor(model => model.Subscriptions, null, new { @class = "text-danger" })
+                    <p>Do you have any other monthly expenses?:<br />
+                    <input type="text" name="other" maxlength="8" /></p><br />
+                    <input type="submit" value="Calculate" class="btn btn-success" />
+                    @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-danger" })
+
+                </div>
+                <div class="offset-sm-2 col-sm-5">
+
+                    <p>Yearly <strong id="budpopOut2">tax: <span id="budhover2">Tax is money that is paid automatically from your wages to the government, so they can put money into transport, education etc. The amount you pay changes depending on how much you earn.</span></strong><span>£@Html.ValueFor(m => m.Tax)</span></p><br />
+                    <p>Yearly <strong id="budpopOut3">National Insurance: <span id="budhover3">National Insurance is an amount you must pay to the government, so they can help people who are sick, unemployed, or retired.</span></strong><span>£@Html.ValueFor(m => m.NInumber)</span></p><br />
+                    <p>Disposable income per month: <span>£@Html.ValueFor(m => m.DispMonth)</span></p><br />
+                    <p>Disposable income per day: <span>£@Html.ValueFor(m => m.DispDay)</span></p><br /><br />
+                    
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>   

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<LifeSkillsProject.Models.Bank>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css' />
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/agency.min.css" rel="stylesheet" />
+
+    <!-- My personal CSS-->
+    <link href="~/MyCss/myCss.css" rel="stylesheet" />
+</head>
+<body id="banking">
+    <div id="bankC">
+        <h1 id="bankHeading">Best UK Interest Accounts</h1>
+        @Html.ActionLink("Back", "Index", null, new { @class = "btn btn-danger bankBtn" })
+        <br /><br />
+        <table class="table" id="bankTable">
+            <tr class="table-header">
+                <th class="text-center" id="indexTableHead">
+                    @Html.DisplayNameFor(model => model.Bank1)
+                </th>
+                <th class="text-center" id="indexTableHead">
+                    @Html.DisplayNameFor(model => model.Logo)
+                </th>
+
+                <th class="text-center" id="indexTableHead">
+                    <strong id="banpopOut1">
+                        @Html.DisplayNameFor(model => model.AccountType)<span id="banhover1">
+                            <i>Account types:</i><br />1) Fixed Rate ISAs
+                            are accounts with high interest rates, but you can usually only invest a certain amount
+                            of money in them. You also can't take out your money during the fixed term, or you lose interest.<br />
+                            2) Peer to peer banking means using a person instead of a bank to save your money with.<br />
+                            3) A corporate bond is taking on money from a company with them assuring to pay you back with future earnings.
+                        </span>
+                    </strong>
+                </th>
+                <th class="text-center" id="indexTableHead">
+                    <strong id="banpopOut2">
+                        @Html.DisplayNameFor(model => model.OpenWith)<span id="banhover2">
+                            <i>Open with:</i><br />
+                            This refers to how much money you need to pay initially to open the account
+                        </span>
+                    </strong>
+                </th>
+                <th class="text-center" id="indexTableHead">
+                    <strong id="banpopOut3">
+                        @Html.DisplayNameFor(model => model.InterestRate)<span id="banhover3">
+                            <i>Interst Rate:</i><br />
+                            This is the percentage you earn on your money if you leave it in the bank for a year. So if you
+                            leave £100 for a year at an interest rate of 4%, you will have £104 at the end of that year.
+                        </span>
+                    </strong>
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Bank1)
+                    </td>
+                    <td class="text-center">
+                        <img src="@Url.Content(item.Logo)" height="100" />
+                    </td>
+                    <td class="text-center toUpper">
+                        @Html.DisplayFor(modelItem => item.AccountType)
+                    </td>
+                    <td class="text-center toUpper">
+                        @Html.DisplayFor(modelItem => item.OpenWith)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.InterestRate)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+</body>
+</html>

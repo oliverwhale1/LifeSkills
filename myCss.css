@@ -1,0 +1,521 @@
+﻿a:hover {
+    text-decoration: none;
+}
+
+
+#mainNav {
+    background-color: #212529;
+}
+
+.slogan {
+    color: #f8f9fa !important;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h3 {
+    font-size: 2.5em !important;
+}
+
+.body-content {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 2000px;
+}
+
+.intro-lead-in {
+    color: black;
+}
+
+.intro-heading {
+    color: black;
+}
+
+#picks {
+    padding: 70px 15px;
+}
+
+#questions {
+    padding: 70px 15px;
+}
+
+#contact {
+    padding: 70px;
+}
+
+#budget {
+    background-image: url('../img/budgetBackG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+#banking {
+    background-image: url('../img/budgetBackG.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center -5px;;
+    background-size: cover;
+}
+
+
+.table td {
+    border-bottom: 1px solid #212529;
+}
+
+.table th {
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529;
+}
+
+hr {
+    border: none;
+}
+
+#bankC {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#bankHeading {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.bankBtn {
+    float: right;
+    margin-bottom: 2vh;
+}
+
+#mb1 {
+    background-color: #f2a2e8;
+    border-radius: 20px;
+}
+
+#mb2 {
+    background-color: #f8b88b;
+    border-radius: 20px;
+}
+
+#mb3 {
+    background-color: #faf884;
+    border-radius: 20px;
+}
+
+#mb4 {
+    background-color: #fea3aa;
+    border-radius: 20px;
+}
+
+#mb5 {
+    background-color: #baed91;
+    border-radius: 20px;
+}
+
+#mb6 {
+    background-color: #b2cefe;
+    border-radius: 20px;
+}
+
+#m1 {
+    background-image: url('../img/modal5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+#m2 {
+    background-image: url('../img/modal6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    //done
+}
+
+#m3 {
+    background-image: url('../img/modal3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left left;
+    background-size: cover;
+    //done
+}
+
+#m4 {
+    background-image: url('../img/modal2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+#m5 {
+    background-image: url('../img/modal1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    //done
+}
+
+#m6 {
+    background-image: url('../img/modal4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    //done
+}
+
+strong {
+    color: blue;
+}
+
+.budgetC {
+    color: black;
+}
+
+#budhover1 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    bottom: 10px;
+    left: 50%;
+    margin-right: 2vw;
+}
+
+#budpopOut1:hover #budhover1 {
+    display: block;
+    color: white;
+}
+
+#budhover2 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+    bottom: 5px;
+    margin-right: 2vw;
+}
+
+#budpopOut2:hover #budhover2 {
+    display: block;
+    color:white;
+}
+
+#budhover3 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+    bottom: 5px;
+    margin-right: 2vw;
+}
+
+#budpopOut3:hover #budhover3 {
+    display: block;
+    color: white;
+}
+
+#banhover1 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    bottom: 5px;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    
+}
+
+#banpopOut1:hover #banhover1 {
+    display: block;
+    color: white;
+}
+
+#banhover2 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: 0px;
+    bottom: 5px;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+#banpopOut2:hover #banhover2 {
+    display: block;
+    color: white;
+}
+
+
+#banhover3 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    bottom: 5px;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+#banpopOut3:hover #banhover3 {
+    display: block;
+    color: white;
+}
+
+#indhover1 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut1:hover #indhover1 {
+    display: block;
+    color: white;
+}
+
+#indhover2 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut2:hover #indhover2 {
+    display: block;
+    color: white;
+}
+
+#indhover3 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut3:hover #indhover3 {
+    display: block;
+    color: white;
+}
+
+#indhover4 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut4:hover #indhover4 {
+    display: block;
+    color: white;
+}
+
+#indhover5 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut5:hover #indhover5 {
+    display: block;
+    color: white;
+}
+
+#indhover6 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut6:hover #indhover6 {
+    display: block;
+    color: white;
+}
+
+#indhover7 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut7:hover #indhover7 {
+    display: block;
+    color: white;
+}
+
+#indhover8 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut8:hover #indhover8 {
+    display: block;
+    color: white;
+}
+
+#indhover9 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut9:hover #indhover9 {
+    display: block;
+    color: white;
+}
+
+#indhover10 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut10:hover #indhover10 {
+    display: block;
+    color: white;
+}
+
+#indhover11 {
+    display: none;
+    position: absolute;
+    background: #00aabb;
+    border-radius: .4em;
+    border: 21px solid transparent;
+    margin-left: -21px;
+    margin-bottom: -21px;
+}
+
+#indpopOut11:hover #indhover11 {
+    display: block;
+    color: white;
+}
+
+#contactHead {
+    color:white !important;
+}
+
+input::-webkit-input-placeholder {
+    color: #212529 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #212529 !important;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #212529 !important;
+}
+
+input:-ms-input-placeholder {
+    color: #212529 !important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #212529 !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #212529 !important;
+}
+
+textarea::-moz-placeholder { /* Firefox 19+ */
+    color: #212529 !important;
+}
+
+textarea:-ms-input-placeholder {
+    color: #212529 !important;
+}
+
+#sendMessageButton {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#indBtn {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#indHeading {
+    color: #fed136;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#modalC {
+    text-align: left;
+}
+
+.indSmBtn {
+    color:white !important;
+}
+
+#indImg {
+    width: 100%;
+    height: 60%;
+}
+
+h4 {
+    text-align: center;
+}
+
+#indSlogans {
+    text-align: center;
+}
+
+
